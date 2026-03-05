@@ -22,9 +22,15 @@ The goal is not just to deploy software, but to understand the layers that make 
 devops-lab/
 
 linux-internals
-  ├ arch-install
-  ├ boot-chain
-  └ chroot-experiments
+  ├ amd64
+  |  ├ boot-chain-internals
+  |  ├ arch-install
+  |  └ arch-install.sh 
+  ├ termux
+    ├ Proot VS Chroot
+    ├ Arch chroot setup 
+    └ Arch-Chroot.sh
+  
 
 containers
   ├ docker-basics
