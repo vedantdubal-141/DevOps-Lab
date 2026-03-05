@@ -1,4 +1,4 @@
-# DevOps Lab
+_# DevOps Lab
 
 A collection of experiments exploring Linux internals, system configuration, and modern infrastructure tools.
 
@@ -7,7 +7,7 @@ The goal is not just to deploy software, but to understand the layers that make 
 ---
 
 ## Learning Roadmap
-
+```
 [x] Linux boot process
 [ ] Arch Linux installation
 [ ] Proot VS Chroot
@@ -15,34 +15,33 @@ The goal is not just to deploy software, but to understand the layers that make 
 [ ] Docker networking
 [ ] Reverse proxy setup
 [ ] Kubernetes cluster
-
+```
 ---
 ## Tree structure ( current/planned)
-`
-devops-lab
+```
+devops-lab/
 
 linux-internals
-  ├ arch install
-  ├ boot chain
-  └ chroot experiments
+  ├ arch-install
+  ├ boot-chain
+  └ chroot-experiments
 
 containers
-  ├ docker basics
-  ├ jellyfin container
-  └ reverse proxy
+  ├ docker-basics
+  ├ jellyfin-container
+  └ reverse-proxy
 
 infrastructure
   ├ NAS
   └ monitoring
 
 orchestration
-  └ kubernetes 
-
-`
+  └ kubernetes
+```
 
 ## journey
 
-`hardware
+```hardware
 ↓
 firmware
 ↓
@@ -57,7 +56,7 @@ containers
 services
 ↓
 orchestration
-`
+```
 
 ## Sections
 
