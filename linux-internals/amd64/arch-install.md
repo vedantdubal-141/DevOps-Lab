@@ -1,3 +1,5 @@
+## Part of: DevOps-Lab → Linux Internals
+
 # Arch Linux Manual Installation Guide: Part 2 (Chroot Environment)
 
 _This guide covers the final steps of manually installing and setting up Arch Linux after partitioning and mounting._
@@ -95,14 +97,13 @@ Choose your bootloader:
 
 ### **Installation Example (GRUB)**
 
-```bash
+````bash
 # Install GRUB
 pacman -S grub
 
 # Configure GRUB in chroot
 grub-install /dev/sdX  # Replace with your disk (e.g., /dev/nvme0n1)
-update-grub
-```
+grub-mkconfig -o /boot/grub/grub.cfg
 
 ## ![grub installations](src/grub.jpg)
 
@@ -119,7 +120,7 @@ passwd myuser
 
 # Edit sudo rules (replace `EDITOR` with your preferred editor)
 EDITOR=vim visudo
-```
+````
 
 > **⚠️ Warning:**
 > Forgetting to add `myuser` to the `wheel` group will lock you out of `sudo`.
@@ -149,3 +150,8 @@ systemctl enable --now ly
 ## **7. Hashtags & Tags**
 
 #ArchLinux | #DevOps | #LinuxKernel | #SysAdmin | #CLI | #HomeLabs | #DIY | #TechSkills | #SRE
+
+See also:
+
+- boot-chain-internals.md
+- arch-install.md
