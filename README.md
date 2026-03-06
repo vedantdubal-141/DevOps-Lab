@@ -1,4 +1,4 @@
-_# DevOps Lab
+# DevOps Lab
 
 A collection of experiments exploring Linux internals, system configuration, and modern infrastructure tools.
 
@@ -20,13 +20,13 @@ The goal is not just to deploy software, but to understand the layers that make 
 ## Tree structure ( current/planned)
 ```
 devops-lab/
-
+b
 linux-internals
   ├ amd64
   |  ├ boot-chain-internals
   |  ├ arch-install
   |  └ arch-install.sh 
-  ├ termux
+  ├ arm64(termux)
     ├ Proot VS Chroot
     ├ Arch chroot setup 
     └ Arch-Chroot.sh
